@@ -10,20 +10,24 @@
 </div>
 
 <div class="d-flex flex-row">
-  <ds-item-page-title-field [item]="object" class="mr-auto">
-  </ds-item-page-title-field>
+  <ds-themed-item-page-title-field [item]="object" class="mr-auto">
+  </ds-themed-item-page-title-field>
+
   <ds-dso-edit-menu></ds-dso-edit-menu>
 </div>
 <div class="row">
   <div class="col-xs-12 col-md-4">
-    <ng-container *ngIf="!mediaViewer.image">
-      <ds-metadata-field-wrapper [hideIfNoTextContent]="false">
-        <ds-thumbnail [thumbnail]="object?.thumbnail | async"></ds-thumbnail>
+    <ng-container *ngIf="!(mediaViewer.image || mediaViewer.video)">
+      <ng-container *ngIf="object.metadata['dc.description.embargo']">
+        <img class="thumbnail-content img-fluid border border-dark mb-2" src="assets/images/under_embargo.png" />
+      </ng-container>
+      <ds-metadata-field-wrapper *ngIf="!object.metadata['dc.description.embargo']" [hideIfNoTextContent]="false">
+        <ds-themed-thumbnail [thumbnail]="object?.thumbnail | async"></ds-themed-thumbnail>
       </ds-metadata-field-wrapper>
     </ng-container>
-    <ng-container *ngIf="mediaViewer.image">
-      <ds-media-viewer [item]="object" [videoOptions]="mediaViewer.video"></ds-media-viewer>
-    </ng-container>
+    <div *ngIf="mediaViewer.image || mediaViewer.video" class="mb-2">
+      <ds-themed-media-viewer [item]="object"></ds-themed-media-viewer>
+    </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
 
     <ds-generic-item-page-field [item]="object"
@@ -31,7 +35,9 @@
                                 [label]="'No Access Until'">
     </ds-generic-item-page-field>
 
-    <h5>Permanent Link(s)</h5>
+    <div *ngIf="object.metadata['dc.identifier.doi'] || object.metadata['dc.identifier.uri']" class="mb-2">
+      <h5>Permanent Link(s)</h5>
+    </div>
 
     <ds-item-page-uri-field [item]="object"
                             [fields]="['dc.identifier.doi']"
