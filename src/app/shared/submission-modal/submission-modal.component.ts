@@ -1,14 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {DSpaceObjectType} from "../../core/shared/dspace-object-type.model";
-import {SelectorActionType} from "../dso-selector/modal-wrappers/dso-selector-modal-wrapper.component";
-import {DSpaceObject} from "../../core/shared/dspace-object.model";
-import {NavigationExtras, Router} from "@angular/router";
-import {Observable} from "rxjs";
-import {select, Store} from "@ngrx/store";
+import {DSpaceObjectType} from '../../core/shared/dspace-object-type.model';
+import {SelectorActionType} from '../dso-selector/modal-wrappers/dso-selector-modal-wrapper.component';
+import {DSpaceObject} from '../../core/shared/dspace-object.model';
+import {NavigationExtras, Router} from '@angular/router';
+import {Observable} from 'rxjs';
+import {select, Store} from '@ngrx/store';
 import {
     isAuthenticated,
 } from '../../core/auth/selectors';
-import {CoreState} from "../../core/core-state.model";
+import {CoreState} from '../../core/core-state.model';
 
 @Component({
     selector: 'ds-submission-modal',

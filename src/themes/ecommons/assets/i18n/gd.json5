@@ -1,5 +1,5 @@
 {
   "repository.title.prefix": "Cornell eCommons :: ",
   "repository.title.prefixDSpace": "Cornell eCommons ::",
-  "footer.copyright": "© {{ year }}"
+  "footer.copyright": "© {{ year }}",
 }

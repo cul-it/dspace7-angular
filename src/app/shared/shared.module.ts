@@ -294,7 +294,7 @@ import {
 } from '../item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import {BitstreamListItemComponent} from './object-list/bitstream-list-item/bitstream-list-item.component';
 import {NgxPaginationModule} from 'ngx-pagination';
-import {SubmissionModalComponent} from "./submission-modal/submission-modal.component";
+import {SubmissionModalComponent} from './submission-modal/submission-modal.component';
 
 const MODULES = [
     CommonModule,

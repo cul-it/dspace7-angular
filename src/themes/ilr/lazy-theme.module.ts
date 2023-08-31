@@ -56,8 +56,8 @@ import {
 import {ComcolModule} from '../../app/shared/comcol/comcol.module';
 import {RootModule} from '../../app/root.module';
 import {CommunityPageComponent} from './app/community-page/community-page.component';
-import {ReadershipMapComponent} from "./app/readership-map/readership-map.component";
-import {DsoPageModule} from "../../app/shared/dso-page/dso-page.module";
+import {ReadershipMapComponent} from './app/readership-map/readership-map.component';
+import {DsoPageModule} from '../../app/shared/dso-page/dso-page.module';
 
 const DECLARATIONS = [
     CommunityPageComponent,

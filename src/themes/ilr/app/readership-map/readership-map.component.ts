@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {fadeInOut} from '../../../../app/shared/animations/fade';
-import {DomSanitizer} from "@angular/platform-browser";
+import {DomSanitizer} from '@angular/platform-browser';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class ReadershipMapComponent {
     }
 
     safeUrl() {
-        let trusted = this.sanitizer.bypassSecurityTrustResourceUrl("https://readership-maps.ecommons.cornell.edu/map.html");
+        let trusted = this.sanitizer.bypassSecurityTrustResourceUrl('https://readership-maps.ecommons.cornell.edu/map.html');
         return trusted;
     }
 

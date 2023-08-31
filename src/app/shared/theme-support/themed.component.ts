@@ -5,7 +5,6 @@ import {
   ViewContainerRef,
   ComponentRef,
   SimpleChanges,
-  OnInit,
   OnDestroy,
   ComponentFactoryResolver,
   ChangeDetectorRef,
