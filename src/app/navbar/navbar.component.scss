@@ -5,17 +5,19 @@ nav.navbar {
 
 /** Mobile menu styling **/
 @media screen and (max-width: map-get($grid-breakpoints, md)-0.02) {
-    .navbar {
-        width: 100%;
-        background-color: var(--bs-white);
-        position: absolute;
-        overflow: hidden;
-        height: 0;
-        &.open {
-          height: auto;
-          min-height: 100vh; //doesn't matter because wrapper is sticky
-        }
+  .navbar {
+    // changed from percent to vw, see: https://github.com/DSpace/dspace-angular/pull/2444
+    width: 100vw;
+    background-color: var(--bs-white);
+    // removed to fix safari mobile hamburger menu not working
+    // see: https://github.com/DSpace/dspace-angular/pull/2444
+    //position: absolute;
+    overflow: hidden;
+    height: 0;
+    &.open {
+      height: 100vh; //doesn't matter because wrapper is sticky
     }
+  }
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, md)) {
