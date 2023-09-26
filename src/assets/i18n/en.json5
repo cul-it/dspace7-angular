@@ -3412,9 +3412,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title.prefix": "Cornell eCommons :: ",
+  "repository.title": "Cornell eCommons",
 
-  "repository.title.prefixDSpace": "Cornell eCommons ::",
+  "repository.title.prefix": "Cornell eCommons :: ",
 
   "resource-policies.add.button": "Add",
 
