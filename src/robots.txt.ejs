@@ -19,19 +19,19 @@ Disallow: /workflowitems
 
 # Optionally uncomment the following line ONLY if sitemaps are working
 # and you have verified that your site is being indexed correctly.
-# Disallow: /browse/*
+Disallow: /browse/*
 #
 # If you have configured DSpace (Solr-based) Statistics to be publicly
 # accessible, then you may not want this content to be indexed
-# Disallow: /statistics
+Disallow: /statistics
 #
 # You also may wish to disallow access to the following paths, in order
 # to stop web spiders from accessing user-based content
-# Disallow: /contact
-# Disallow: /feedback
-# Disallow: /forgot
-# Disallow: /login
-# Disallow: /register
+Disallow: /contact
+Disallow: /feedback
+Disallow: /forgot
+Disallow: /login
+Disallow: /register
 
 
 ##############################
@@ -124,8 +124,8 @@ Disallow: /
 # If your own faculty is bringing down your dspace with recursive wget,
 # you can advise them to use the --wait option to set the delay between hits.
 #
-#User-agent: wget
-#Disallow: /
+User-agent: wget
+Disallow: /
 
 #
 # The 'grub' distributed client has been *very* poorly behaved.
