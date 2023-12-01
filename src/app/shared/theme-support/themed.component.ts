@@ -5,6 +5,7 @@ import {
   ViewContainerRef,
   ComponentRef,
   SimpleChanges,
+  OnInit,
   OnDestroy,
   ComponentFactoryResolver,
   ChangeDetectorRef,
@@ -95,6 +96,7 @@ export abstract class ThemedComponent<T> implements AfterViewInit, OnDestroy, On
     }
 
     if (hasNoValue(this.lazyLoadObs)) {
+
       this.lazyLoadObs = combineLatest([
         observableOf(changes),
         this.resolveThemedComponent(this.themeService.getThemeName()).pipe(
