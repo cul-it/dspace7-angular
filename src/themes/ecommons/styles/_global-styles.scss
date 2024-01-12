@@ -6,3 +6,8 @@
 a {
 	text-decoration: underline;
 }
+
+.modal-open {
+	overflow: visible !important;
+	overflow-x: hidden !important;
+}
