@@ -72,8 +72,8 @@ a.dont-break-out {
 }
 
 .modal-open {
-  overflow: visible;
-  overflow-x: hidden;
+  overflow: visible !important;
+  overflow-x: hidden !important;
 }
 
 .modal-dialog {
