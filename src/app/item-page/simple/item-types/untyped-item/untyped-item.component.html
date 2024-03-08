@@ -99,7 +99,8 @@
 
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['dc.description']"
-                                [label]="'item.page.description'">
+                                [label]="'item.page.description'"
+                                [separator]="'<br/><br/>'">
     </ds-generic-item-page-field>
 
     <ds-generic-item-page-field [item]="object"
@@ -196,7 +197,8 @@
     </ds-item-page-uri-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['dc.relation']"
-                                [label]="'Related To'">
+                                [label]="'Related To'"
+                                [separator]="'<br/><br/>'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['dc.relation.haspart']"
@@ -220,7 +222,8 @@
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['dc.relation.isreferencedby']"
-                                [label]="'Related Publication(s)'">
+                                [label]="'Related Publication(s)'"
+                                [separator]="'<br/><br/>'">
     </ds-generic-item-page-field>
     <ds-item-page-uri-field [item]="object"
                             [fields]="['dc.relation.isreferencedbyuri']"
