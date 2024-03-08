@@ -2398,7 +2398,7 @@
 
   "item.page.abstract": "Abstract",
 
-  "item.page.author": "Authors",
+  "item.page.author": "Author(s)",
 
   "item.page.citation": "Citation",
 
@@ -2444,7 +2444,7 @@
 
   "item.page.relationships.isJournalOfPublication": "Publications",
 
-  "item.page.relationships.isOrgUnitOfPerson": "Authors",
+  "item.page.relationships.isOrgUnitOfPerson": "Author(s)",
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
@@ -3478,7 +3478,7 @@
 
   "relationships.add.error.title": "Unable to add relationship",
 
-  "relationships.isAuthorOf": "Authors",
+  "relationships.isAuthorOf": "Author(s)",
 
   "relationships.isAuthorOf.Person": "Authors (persons)",
 
@@ -3492,7 +3492,7 @@
 
   "relationships.isOrgUnitOf": "Organizational Units",
 
-  "relationships.isPersonOf": "Authors",
+  "relationships.isPersonOf": "Author(s)",
 
   "relationships.isProjectOf": "Research Projects",
 
@@ -4254,7 +4254,7 @@
 
   "submission.sections.describe.relationship-lookup.title.isJournalOfPublication": "Journals",
 
-  "submission.sections.describe.relationship-lookup.title.isAuthorOfPublication": "Authors",
+  "submission.sections.describe.relationship-lookup.title.isAuthorOfPublication": "Author(s)",
 
   "submission.sections.describe.relationship-lookup.title.isFundingAgencyOfPublication": "Funding Agency",
 
@@ -4262,7 +4262,7 @@
 
   "submission.sections.describe.relationship-lookup.title.Publication": "Publications",
 
-  "submission.sections.describe.relationship-lookup.title.Person": "Authors",
+  "submission.sections.describe.relationship-lookup.title.Person": "Author(s)",
 
   "submission.sections.describe.relationship-lookup.title.OrgUnit": "Organizational Units",
 
