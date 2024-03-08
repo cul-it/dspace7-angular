@@ -222,10 +222,10 @@
                                 [fields]="['dc.relation.isreferencedby']"
                                 [label]="'Related Publication(s)'">
     </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-                                [fields]="['dc.relation.isreferencedbyuri']"
-                                [label]="'Link(s) to Related Publication(s)'">
-    </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="object"
+                            [fields]="['dc.relation.isreferencedbyuri']"
+                            [label]="'Link(s) to Related Publication(s)'">
+    </ds-item-page-uri-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['dc.relation.references']"
                                 [label]="'References'">
