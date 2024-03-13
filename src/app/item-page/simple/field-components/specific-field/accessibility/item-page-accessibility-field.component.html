@@ -1,0 +1,8 @@
+<div class="item-page-accessibility-field">
+  <ds-metadata-field-wrapper [label]="label | translate">
+    <ng-container *ngFor="let value of item?.allMetadataValues(fields); let last=last;">
+      <span class="dont-break-out preserve-line-breaks">{{value | camelCaseToLowerCaseWords }}</span>
+      <span class="separator" *ngIf="!last" [innerHTML]="separator"></span>
+    </ng-container>
+  </ds-metadata-field-wrapper>
+</div>

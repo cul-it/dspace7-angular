@@ -275,15 +275,16 @@
                                 [fields]="['dc.type']"
                                 [label]="'Types'">
     </ds-generic-item-page-field>
-
-    <ds-generic-item-page-field [item]="object"
+    <ds-item-page-accessibility-field [item]="object"
                                 [fields]="['schema.accessibilityFeature']"
-                                [label]="'Accessibility Feature'">
-    </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
+                                [label]="'Accessibility Feature'"
+                                [separator]="', '">
+    </ds-item-page-accessibility-field>
+    <ds-item-page-accessibility-field [item]="object"
                                 [fields]="['schema.accessibilityHazard']"
-                                [label]="'Accessibility Hazard'">
-    </ds-generic-item-page-field>
+                                [label]="'Accessibility Hazard'"
+                                      [separator]="', '">
+    </ds-item-page-accessibility-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['schema.accessibilitySummary']"
                                 [label]="'Accessibility Summary'">
