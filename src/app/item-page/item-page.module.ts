@@ -62,7 +62,10 @@ import {
 } from './full/field-components/file-section/themed-full-file-section.component';
 import {
   ItemPageKalturaFieldComponent
-} from "./simple/field-components/specific-field/kaltura/item-page-kaltura-field.component";
+} from './simple/field-components/specific-field/kaltura/item-page-kaltura-field.component';
+import {
+  ItemPageAccessibilityFieldComponent
+} from './simple/field-components/specific-field/accessibility/item-page-accessibility-field.component';
 
 const ENTRY_COMPONENTS = [
   // put only entry components that use custom decorator
@@ -106,7 +109,8 @@ const DECLARATIONS = [
   ItemAlertsComponent,
   ThemedItemAlertsComponent,
   BitstreamRequestACopyPageComponent,
-  ItemPageKalturaFieldComponent
+  ItemPageKalturaFieldComponent,
+  ItemPageAccessibilityFieldComponent,
 ];
 
 @NgModule({

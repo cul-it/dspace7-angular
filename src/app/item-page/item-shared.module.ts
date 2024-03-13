@@ -17,10 +17,12 @@ import {
   ThemedMetadataRepresentationListComponent
 } from './simple/metadata-representation-list/themed-metadata-representation-list.component';
 
+import {CamelCaseToLowerCaseWordsPipe} from '../pipes/camel-case-to-lower-case-words.pipe';
+
 const ENTRY_COMPONENTS = [
   ItemVersionsDeleteModalComponent,
   ItemVersionsSummaryModalComponent,
-
+  CamelCaseToLowerCaseWordsPipe,
 ];
 
 const COMPONENTS = [
@@ -32,6 +34,7 @@ const COMPONENTS = [
   MetadataRepresentationListComponent,
   ThemedMetadataRepresentationListComponent,
   RelatedItemsComponent,
+  CamelCaseToLowerCaseWordsPipe,
 ];
 
 @NgModule({
@@ -42,7 +45,7 @@ const COMPONENTS = [
     CommonModule,
     SearchModule,
     SharedModule,
-    TranslateModule
+    TranslateModule,
   ],
   exports: [
     ...COMPONENTS
