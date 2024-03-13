@@ -31,6 +31,19 @@
     <div *ngIf="mediaViewer.image || mediaViewer.video" class="mb-2">
       <ds-themed-media-viewer [item]="object"></ds-themed-media-viewer>
     </div>
+
+    <div *ngIf="object.metadata['dc.description.embargo']" class="mb-2">
+      <h5>Access Restricted</h5>
+      <p>Access to this document is restricted. Some items have been embargoed at the request of the author, but will
+        be made publicly available after the "No Access Until" date.</p>
+      <p>During the embargo period, you may request access to the item by clicking the link to the restricted file(s)
+        and completing the request form. If we have contact information for a Cornell author, we will contact the author
+        and request permission to provide access. If we do not have contact information for a Cornell author, or the
+        author denies or does not respond to our inquiry, we will not be able to provide access. For more information,
+        <a href="https://guides.library.cornell.edu/ecommons/findtheses">review our policies for restricted content</a>.
+      </p>
+    </div>
+
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
 
     <ds-generic-item-page-field [item]="object"
@@ -278,12 +291,12 @@
     <ds-item-page-accessibility-field [item]="object"
                                 [fields]="['schema.accessibilityFeature']"
                                 [label]="'Accessibility Feature'"
-                                [separator]="', '">
+                                [separator]="'; '">
     </ds-item-page-accessibility-field>
     <ds-item-page-accessibility-field [item]="object"
                                 [fields]="['schema.accessibilityHazard']"
                                 [label]="'Accessibility Hazard'"
-                                      [separator]="', '">
+                                      [separator]="'; '">
     </ds-item-page-accessibility-field>
     <ds-generic-item-page-field [item]="object"
                                 [fields]="['schema.accessibilitySummary']"
