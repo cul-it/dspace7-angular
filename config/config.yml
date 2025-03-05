@@ -6,7 +6,7 @@ ui:
 
 rest:
   ssl: true
-  host: dspace7-dev.library.cornell.edu
+  host: ecommons.cornell.edu
   port: 443
   nameSpace: /server
 
