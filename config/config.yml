@@ -13,8 +13,8 @@ rest:
 
 auth:
   ui:
-    timeUntilIdle: 14400000
-    idleGracePeriod: 14400000
+    timeUntilIdle: 3600000
+    idleGracePeriod: 3600000
 
 info:
   enableEndUserAgreement: false
